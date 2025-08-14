@@ -1,0 +1,72 @@
+/* External stylesheet for index.html and contact.html */
+/* Basic reset and typography */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #222;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+
+/* BACKGROUND IMAGE for the home page (index.html uses body.home) */
+body.home {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #111;
+}
+
+/* Header & nav */
+header { background: rgba(255,255,255,0.85); padding: 10px 20px; border-bottom: 1px solid #eee; position: sticky; top: 0; }
+.nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 16px; align-items: center; }
+.nav-list a { color: #333; text-decoration: none; padding: 6px 8px; border-radius: 4px; }
+.nav-list a:hover { background: #f0f0f0; }
+
+/* Hero */
+.hero { padding: 28px 20px; background: rgba(255,255,255,0.6); border-radius: 6px; display: inline-block; margin: 20px; }
+.lead { font-size: 18px; margin-top: 8px; color: #444; }
+
+/* Layout */
+main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+
+/* Gallery / images */
+.thumb {
+  width: 220px;
+  margin: 8px;
+  border: 3px solid #ddd;
+  padding: 4px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* Video container */
+.video-container { margin-bottom: 18px; border: 1px solid #ddd; padding: 12px; background: rgba(255,255,255,0.8); border-radius: 6px; }
+
+/* Forms */
+.contact-card { background: rgba(255,255,255,0.95); padding: 18px; border-radius: 6px; border: 1px solid #e6e6e6; }
+.contact-form { display: grid; gap: 10px; max-width: 600px; }
+.contact-form label { font-weight: 600; }
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover { opacity: 0.95; }
+
+/* Footer */
+footer { text-align: center; padding: 12px; margin-top: 20px; border-top: 1px solid #eee; background: rgba(255,255,255,0.85); }
+
+/* Utility */
+h1, h2 { margin: 8px 0; color: #222; }
