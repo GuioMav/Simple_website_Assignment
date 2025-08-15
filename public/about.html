@@ -7,25 +7,101 @@
 
 
   <style>
-    /* body { font-family: Arial, Helvetica, sans-serif; color: #222; margin: 0; padding: 0 20px; background: #fafafa; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      line-height: 1.6;
+    }
 
-    header, footer { background: #333; color: #fff; padding: 12px 20px; }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 12px 20px;
+    }
 
-    .nav-list { list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; }
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
 
-    .nav-list a { color: #fff; text-decoration: none; }
+    .nav-list a {
+      color: #0052FF;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease, border-bottom 0.2s ease;
+      padding-bottom: 4px;
+    }
 
-    main { max-width: 900px; margin: 20px auto; }
+    .nav-list a:hover {
+      color: #003bb5;
+      border-bottom: 2px solid #0052FF;
+    }
 
-    .about-card { background: #fff; padding: 18px; border-radius: 6px; border: 1px solid #ddd; }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-    table { width: 100%; border-collapse: collapse; margin-top: 14px; }
+    .about-card {
+      background: #ffffff;
+      padding: 24px;
+    }
 
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    .about-card h1 {
+      margin-top: 0;
+      color: #111827;
+    }
 
-    th { background: #f0f0f0; }
+    img.profile {
+      float: right;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-left: 16px;
+    }
 
-    img.profile { float: right; width: 150px; border: 3px solid #ff6600; border-radius: 6px; margin-left: 12px; } */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 0.95rem;
+      border: 1px solid #e5e7eb;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #e5e7eb;
+    }
+
+    th {
+      background: #f3f4f6;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      padding: 12px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -42,15 +118,20 @@
   <main>
     <section class="about-card">
       <h1>About Me</h1>
-      <img src="images/photo2.jpg" alt="Portrait of GuioMav" class="profile" />
+      <img src="/public/assets/images/profile.png" alt="Portrait of GuioMav" class="profile" />
       <p>
-        Hello — I'm GuioMav. I'm a web enthusiast who enjoys building clean, accessible websites
+       Hi, I'm Manuel Mavungo. I'm fullstack web developer who enjoys building clean, accessible websites
         and small apps. I like learning new frontend and backend technologies, collaborating on
         projects, and sharing what I learn.
       </p>
 
       <h2>Summary</h2>
       <p>I focus on readable code, good UX, and responsive design. I enjoy working on personal projects, contributing to open source, and learning new tools.</p>
+      
+      <h2>Social Links</h2>
+      <p><a href="https://www.linkedin.com/in/manuelmavungo/">Linkedin</a></p>
+      <p><a href="https://github.com/GuioMav">Github</a></p>
+      <p><a href="https://manuelmavungo.com">Personal Portfolio</a></p>
 
       <h2>Hobbies, Skills & Experience</h2>
       <table>
@@ -73,7 +154,7 @@
   </main>
 
   <footer>
-    <p>Want to see projects? <a href="index.html">Return home</a>.</p>
+    <p>&copy; 2025 Manuel Mavungo — built with semantic HTML & CSS for an Assignment</p>
   </footer>
 </body>
 </html>
